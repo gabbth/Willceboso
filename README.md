@@ -45,7 +45,7 @@ Este arquivo já esta pronto e você pode mandar para quem quiser
 
 <script>
     function sim() {
-        alert("Você aceitou namorar comigo! :)");
+        alert("Eu os declaro ablueblue:)");
         // redireciona para um URL após clicar no SIM
         location.href = "https://music.youtube.com/watch?v=izGwDsrQ1eQ";
     }
