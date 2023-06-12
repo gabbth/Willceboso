@@ -1,47 +1,70 @@
-main.py
+<!DOCTYPE html>
+<!-- 
+Código escrito por MTHS1901 em um tutorial no YouTube
+Confira: https://www.youtube.com/watch?v=zxxB9SFh9p4
+Este arquivo já esta pronto e você pode mandar para quem quiser
+-->
+<html lang="en">
 
-import tkinter as tk from tkinter Impo
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namora comigo?</title>
+</head>
 
-import random
+<body>
+    <div id="conteudo">
+        <h2>Aceita namorar comigo?</h2>
+        <button class="btn" onclick="sim()">SIM</button>
+        <button class="btn" onclick="desvia(this)" onmouseover="desvia(this)">NÃO</button>
+    </div>
+</body>
+<style>
+    #conteudo {
+        background: #ff7a7a;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 10px;
+        text-align: center;
+        font-family: sans-serif;
+    }
 
-from tkinter import messagebox
+    .btn {
+        background: black;
+        color: white;
+        border: none;
+        padding: 10px;
+        width: 80px;
+        border-radius: 5px;
+    }
+</style>
 
-root = tk. Tk()
+<script>
+    function sim() {
+        alert("Você aceitou namorar comigo! :)");
+        // redireciona para um URL após clicar no SIM
+        location.href = "https://music.youtube.com/watch?v=izGwDsrQ1eQ";
+    }
 
-root.title('Aceltas?')
+    function desvia(btn) {
+        // btn declarado na função
+        btn.style.position = 'absolute';
+        btn.style.bottom = geraPosicao(10, 90);
+        btn.style.left = geraPosicao(10, 90);
+        console.log('opa, desviei...');
+    }
 
-rout.gioetry("600")
+    function geraPosicao(min, max) {
+        return (Math.random() * (max - min) + min) + "%";
+    }
 
-root.configure(background="#ffcBdd")
+    /* Apague se quiser, isso apenas escreve MTHS1901 e o link para o tutorial no console */
+    const o = "MTHS1901", e = 90, l = "bold"; console.log(`%c${o}`, "font-size: 90px; font-weight: bold; background: linear-gradient(90deg, red, yellow);"), console.log("Tutorial: https://www.youtube.com/watch?v=zxxB9SFh9p4");
 
-def move button 1(e):
+</script>
 
-(f abs(e.x-button 1.winfe_x())se and abs(e.y-button Lvinfo y()) < 40: random.randint(0, root.winfo width() button 1.winfo_width())
-
-y-random.randint(e, root.winfo height()-button 1.winfo height())
-
-button 1.place(xxx, y)
-
-def accepted(): messagebox.showinfo(
-
-def denied(): button 1.destroy()
-
-margin Canvas(root, width-508; bg="#ffc@dd, height-100,
-
-bda, highlightthickness-0, relief="ridge")
-
-margin.pack()
-
-test_id Label(root, by="effcadd", text-"Quer namorar comigo?",
-
-fg-"#590422", font-('Montserrat, 24, 'bold')) test_Id.pack() button 1 tk.Button(sot, text="Não", bg="#ffb3c1', commodened,
-
-rettof-RIDGE, 20-3, font-("Montserrat", "bold"))
-
-button 1.pack()
-
-root.bind("Motions, move button 1)
-
-button 2 tk.Button(root, text-"Sim", bg-"affb3c1", relief-RIDGE,
-
-bd-3, commie-a
+</html>
